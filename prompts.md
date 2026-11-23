@@ -1,0 +1,2 @@
+- Asked: Read AGENTS.md and classify its rules for Python desktop apps versus web apps. Changed: Read AGENTS.md and added this prompt log entry. Worked: Yes.
+- Asked: Update AGENTS.md for this Tkinter desktop app and remove web-only rules. Changed: Added the app technology and startup context while keeping the prompt log rule; no web-only rules were present. Worked: Yes.
