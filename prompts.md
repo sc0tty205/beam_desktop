@@ -1,3 +1,6 @@
 - Asked: Read AGENTS.md and classify its rules for Python desktop apps versus web apps. Changed: Read AGENTS.md and added this prompt log entry. Worked: Yes.
 - Asked: Update AGENTS.md for this Tkinter desktop app and remove web-only rules. Changed: Added the app technology and startup context while keeping the prompt log rule; no web-only rules were present. Worked: Yes.
 - Asked: Recognize the changes made in spec.md before committing. Changed: Reviewed the spec diff and recorded this request. Worked: Yes.
+- Asked: Read spec.md and plan the Tkinter beam designer before coding. Changed: Implemented the planned calculation core, section data, plotting module, Tkinter app, requirements, and focused tests. Worked: Yes; all 3 tests passed.
+- Asked: Check whether the plan contradicts spec.md, separates calculations from UI code, and avoids unnecessary complexity. Changed: Reviewed the saved plan against spec.md and recorded the review. Worked: Yes.
+- Asked: Build the app following the plan and spec.md. Changed: Verified the Tkinter app, calculation modules, plotting, section data, requirements, and tests; no additional code changes were needed. Worked: Yes; 3 tests passed and syntax compilation succeeded.
