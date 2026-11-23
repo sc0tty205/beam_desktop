@@ -4,3 +4,4 @@
 - Asked: Read spec.md and plan the Tkinter beam designer before coding. Changed: Implemented the planned calculation core, section data, plotting module, Tkinter app, requirements, and focused tests. Worked: Yes; all 3 tests passed.
 - Asked: Check whether the plan contradicts spec.md, separates calculations from UI code, and avoids unnecessary complexity. Changed: Reviewed the saved plan against spec.md and recorded the review. Worked: Yes.
 - Asked: Build the app following the plan and spec.md. Changed: Verified the Tkinter app, calculation modules, plotting, section data, requirements, and tests; no additional code changes were needed. Worked: Yes; 3 tests passed and syntax compilation succeeded.
+- Asked: Run all validation cases in spec.md against the beam calculations. Changed: Executed both cases directly and compared expected and actual values. Worked: Yes; all specified values matched within rounding tolerance.
