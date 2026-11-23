@@ -7,3 +7,4 @@
 - Asked: Run all validation cases in spec.md against the beam calculations. Changed: Executed both cases directly and compared expected and actual values. Worked: Yes; all specified values matched within rounding tolerance.
 - Asked: Build the app again following the plan and updated spec.md. Changed: Added deflection-limit input persistence, File > Save/Open design files, CSV results export, and PDF calculation-sheet export while preserving the calculation module separation. Worked: Yes; 3 tests passed and the app imported successfully.
 - Asked: Rerun the validation cases in spec.md after the desktop-feature changes. Changed: Executed both validation cases directly and reran the test suite. Worked: Yes; all 3 tests passed and both spec cases matched.
+- Asked: Write a short README.md describing the app, packages, and start command. Changed: Added README.md with installation and startup instructions. Worked: Yes.
