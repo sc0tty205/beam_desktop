@@ -39,3 +39,8 @@ deflection 0.609 in.
 
 ## Out of scope
 Continuous beams and buckling.
+
+## Desktop Features
+- Save and Open: A File menu with a button called "Save" that saves the beam (support type, span, section, deflection limit, and loads) to a file and and a button called "Open" that opens it again. Remove "Saving designs" from the Out of scope section of the spec first.
+- Export results: A button that saves a table of x, V, M, and deflection along the beam to a CSV file that opens in Excel.
+- Calculation sheet: A button that saves the diagrams and checks as a PDF, with the inputs listed at the top, ready to hand in with a design.

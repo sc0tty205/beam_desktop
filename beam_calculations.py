@@ -43,6 +43,7 @@ class BeamInput:
     section: SectionProperties
     point_loads: tuple[PointLoad, ...] = ()
     uniform_loads: tuple[UniformLoad, ...] = ()
+    deflection_limit: float = 360
 
 
 @dataclass(frozen=True)
@@ -65,6 +66,8 @@ class BeamResults:
 def validate_beam(beam: BeamInput) -> None:
     if beam.span_ft <= 0:
         raise ValueError("Span must be greater than zero.")
+    if beam.deflection_limit <= 0:
+        raise ValueError("Deflection limit must be greater than zero.")
     if beam.section.E_ksi <= 0 or beam.section.I_in4 <= 0 or beam.section.S_in3 <= 0:
         raise ValueError("Section E, I, and S values must be greater than zero.")
     if beam.section.allowable_stress_ksi <= 0:
@@ -164,7 +167,7 @@ def calculate_beam(beam: BeamInput, samples: int = 1001) -> BeamResults:
     max_moment = float(np.max(np.abs(moment)))
     max_deflection = float(np.max(np.abs(deflection)))
     bending_stress = max_moment * 12 / beam.section.S_in3
-    allowable_deflection = beam.span_ft * 12 / 360
+    allowable_deflection = beam.span_ft * 12 / beam.deflection_limit
     return BeamResults(
         x_ft=x_ft,
         shear_kip=shear,
